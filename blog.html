@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class=" navbar mx-w[1020px]">
+        <div class="navbar bg-[#F9F7F3] px-12">
+            <div class="navbar-start">
+
+                <a class="btn bg-[#B4F461]">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex text-center items-center justify-center ">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a><img src="images/logo.png" alt=""></a></li>
+                    <li class="text-center items-center justify-center"><a href="">Donate Bangladesh</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-end lg:gap-3 ">
+                <a><img src="images/coin.png" alt=""></a>
+                <a href="">
+                    <p>
+                        <span>45000</span>
+                        <span>BDT</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="mt-12">
+        <h2 class="my-6 ml-6 text-4xl font-bold">Important FAQ ?</h2>
+        <div class="join join-vertical w-full px-6">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Question 1: What is the DOM?</div>
+                <div class="collapse-content">
+                    <p>Answer: The Document Object Model (DOM) is a programming interface that allows developers to
+                        interact with and manipulate HTML and XML documents. It represents the document as a structured
+                        tree of nodes, where each node corresponds to a part of the document (like elements, attributes,
+                        or text).</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">Question 2: How do you select an element by its ID in
+                    the DOM?</div>
+                <div class="collapse-content">
+                    <p>Answer :The getElementById() method is straightforward because
+                        IDs are unique within an HTML
+                        document. There should only ever be one ID per element.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">Question 3: How do you add a new element to the DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>Answer: You can add a new element to the DOM using the createElement() <br>
+                        and appendChild() methods.
+                        Here’s an example:</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">Question 4: What is event delegation and how does it
+                    work?
+                </div>
+                <div class="collapse-content">
+                    <p>Answer: Event delegation involves adding a single <br>
+                         event listener to a parent element to manage <br>
+                        events for its children. It takes advantage of event bubbling.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
